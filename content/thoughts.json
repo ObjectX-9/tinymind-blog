@@ -1,5 +1,10 @@
 [
   {
+    "id": "1727082771964",
+    "content": "写篇文章解析下vscode的launch.json，task.json的用法和字段配置",
+    "timestamp": "2024-09-23T09:12:51.964Z"
+  },
+  {
     "id": "1727082707950",
     "content": "vscode如何调试jest的方式，\n```json\n{\n  // 其他的配置在configurations加对象就行了\n  \"version\": \"0.2.0\",\n  \"configurations\": [\n    {\n      \"type\": \"node\",\n      \"request\": \"launch\",\n      \"name\": \"调试数据层test:debug\",\n      \"cwd\": \"${workspaceFolder}/XXX\", // 设置工作目录为XXX\n      \"console\": \"integratedTerminal\",\n      \"skipFiles\": [\n        \"<node_internals>/**\"\n      ],\n      \"program\": \"./node_modules/jest/bin/jest.js\",\n      \"args\": [\n        \"--config\",\n        \"jest.config.mjs\", \n        \"-i\",\n        \"${file}\", // 当前打开的测试文件作为debug输入\n        \"--detectOpenHandles\",\n        \"--forceExit\",\n      ],\n      \"env\": {\n        \"NODE_OPTIONS\": \"--experimental-vm-modules\" // jest在esm模式下跑\n      }\n    },\n  ],\n}\n```",
     "timestamp": "2024-09-23T09:11:47.950Z"
