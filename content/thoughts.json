@@ -1,5 +1,10 @@
 [
   {
+    "id": "1727093960249",
+    "content": "new Proxy的使用",
+    "timestamp": "2024-09-23T12:19:20.249Z"
+  },
+  {
     "id": "1727082771964",
     "content": "写篇文章解析下vscode的launch.json，task.json的用法和字段配置",
     "timestamp": "2024-09-23T09:12:51.964Z"
